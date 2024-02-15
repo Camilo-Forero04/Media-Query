@@ -1,0 +1,42 @@
+* {
+  margin: 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  font-family: sans-serif;
+  font-size: 55px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  border: 5px solid #00FFCC;
+}
+
+[class^=row-] {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+[class^=box-] {
+  background-color: #c4c4c4;
+  width: 33.3333333333%;
+  border: 3px solid black;
+  height: 33.3333333333vh;
+  display: grid;
+  place-content: center;
+}
+
+@media (max-width: 650px) {
+  [class^=row-] {
+    flex-direction: column;
+  }
+  [class^=box-] {
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */
